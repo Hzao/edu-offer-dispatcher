@@ -1,0 +1,25 @@
+name = "xxx-edu-offer-dispatcher"
+main = "src/worker.ts"
+compatibility_date = "2023-07-24"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "XXXXXXXXXXXEDU"
+database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+
+[vars]
+AS_SECRET_KEY = '''
+-----BEGIN PRIVATE KEY-----
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxx
+-----END PRIVATE KEY-----
+'''
+JWT_KID = "xxxxxxxx"
+JWT_ISS = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+OFFERCODE_ID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+RESEND_APIKEY = "re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+EMAILWORKER_AUTHKEY = "xxxxxxxxxxx#xxxxxxx@xxxxxxxxx!xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+FEISHU_ROBOT_URL = "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"

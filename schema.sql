@@ -1,0 +1,9 @@
+CREATE TABLE RedeemCodes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    code TEXT NOT NULL,
+    creation_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    expiry_date DATETIME NOT NULL,
+    issue_date DATETIME,
+    issued_to TEXT,
+    is_redeemed BOOLEAN NOT NULL DEFAULT 0
+);
