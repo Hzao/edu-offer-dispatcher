@@ -363,7 +363,7 @@ async function sendNotEligibleEmail(emailAddress: string, env: Env) {
 			<p>很抱歉，我们发现你的电子邮件地址 ${emailAddress} 不符合我们的教育优惠要求。</p>
 			<p>教育优惠只适用于有效的教育机构的邮箱。如果你认为我们的判断有误，即你的邮箱确实是教育邮箱，请通过以下电子邮件地址联系我们，我们会尽快对此进行核查并提供相应的帮助：</p>
 			<p><strong><a href="mailto:${contactEmail}">${contactEmail}</a></strong></p>
-			<p>感谢你对 ${appName} 的支持，祝你旅行、聚会愉快。</p>
+			<p>感谢你对 ${appName} 的支持。</p>
 			<p>最诚挚的问候，<br>${appName} 支持</p>
 		</div>
 		<div class="container footer">
@@ -413,7 +413,7 @@ async function sendCodeEmail(emailAddress: string, code: string, expirationDate:
 			<p>有效截止日期为${newDateString}。请在截止日期之前兑换。</p>
 			<p>你可以按照以下路径进行兑换：</p>
 			<p>${redeemPath}</p>
-			<p>祝你旅行、聚会愉快！</p>
+			<p>祝你生活愉快！</p>
 			<p>最诚挚的问候，<br>${appName} 支持</p>
 		</div>
 		<div class="container footer">
