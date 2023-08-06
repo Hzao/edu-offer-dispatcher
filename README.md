@@ -21,7 +21,7 @@ A serverless project that helps iOS developers automatically distribute educatio
 
 ## 限制
 
-作者没有 TypeScript 的开发经验，所有代码都由 GPT 生成，经由我修改。可能有一些语法上的问题（其实现在也有很多没解决的编译器报错），如果可以优化，欢迎指出。
+最初的作者没有 TypeScript 的开发经验，所有代码都由 GPT 生成，经由我修改。可能有一些语法上的问题（其实现在也有很多没解决的编译器报错），如果可以优化，欢迎指出。
 
 ## 免责声明
 
