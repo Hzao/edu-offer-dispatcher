@@ -331,7 +331,7 @@ async function sendExceedLimitEmail(emailAddress: string, lastApplyDate: string,
 	</html>
 	`;
 	console.log('sending ReDeemed Within A Year Email');
-	await sendEmail(emailAddress, "你曾在 1 年内申请过 ${serviceName} 教育优惠", emailHTML, env);
+	await sendEmail(emailAddress, `你曾在 1 年内申请过 ${serviceName} 教育优惠`, emailHTML, env);
 }
 
 
@@ -373,7 +373,7 @@ async function sendNotEligibleEmail(emailAddress: string, env: Env) {
 	</body>
 	</html>
 	`;
-	await sendEmail(emailAddress, "有关你的 ${serviceName} 教育优惠资格", emailHTML, env);
+	await sendEmail(emailAddress, `有关你的 ${serviceName} 教育优惠资格`, emailHTML, env);
 }
 
 async function sendCodeEmail(emailAddress: string, code: string, expirationDate: string, env: Env) {
@@ -424,7 +424,7 @@ async function sendCodeEmail(emailAddress: string, code: string, expirationDate:
 	</html>
 	`;
 
-	await sendEmail(emailAddress, "你的 ${serviceName} 教育优惠", emailHTML, env);
+	await sendEmail(emailAddress, `你的 ${serviceName} 教育优惠`, emailHTML, env);
 }
 
 
@@ -446,7 +446,7 @@ async function sendEmail(to: String, subject: String, html: String, env: Env) {
 				'Authorization': `Bearer ${env.RESEND_APIKEY}`,
 			},
 			body: JSON.stringify({
-				from: '${appName} <noreply@mail.numpk.in>',
+				from: `${appName} <${senderEmail}>`,
 				to: [to],
 				subject: subject,
 				html: html,
